@@ -1,6 +1,6 @@
 FROM java:openjdk-8-jdk
 
-MAINTAINER Eugene Volchek <evolchek@klika-tech.com>
+MAINTAINER davojan
 
 RUN groupadd -g 999 teamcity \
 	&& useradd -u 999 -g teamcity -m teamcity \
