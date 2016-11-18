@@ -1,4 +1,4 @@
-Base image for [JetBrains TeamCity](https://www.jetbrains.com/teamcity/) build agent. No build tools included. See [teamcity-agent](https://registry.hub.docker.com/u/davojan/teamcity-agent/) image for a real-life usage example.
+Base image for [JetBrains TeamCity](https://www.jetbrains.com/teamcity/) build agent. No build tools included. See [teamcity-agent](https://registry.hub.docker.com/u/procraft/teamcity-agent/) image for a real-life usage example.
 
 ## How to use the image
 
@@ -9,7 +9,7 @@ Run a build agent container:
 ```
 docker run -d --name teamcity-agent --link teamcity:teamcity \
   -e TEAMCITY_URL=http://teamcity:8111 -e AGENT_NAME=Default \
-  davojan/teamcity-agent
+  procraft/teamcity-agent
 ```
 
 The bootstrap script will automatically download and start a build agent.
